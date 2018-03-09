@@ -14,7 +14,7 @@ class App < Sinatra::Base
         Hero.new(hero_params)
       end
       @heroes = Hero.all
-      puts @team
+      puts params[:team]
 
       erb :team
     end
