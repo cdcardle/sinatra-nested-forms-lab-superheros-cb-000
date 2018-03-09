@@ -3,8 +3,8 @@ class Team
   TEAM = []
 
   def initialize(args)
-    @name = :name
-    @motto = :motto
+    @name = args[:name]
+    @motto = args[:motto]
   end
 
   def self.all
